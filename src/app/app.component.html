@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="text-primary">ASSIGNMENT</h1>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>USERID</th>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>BODY</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of allPosts">
+        <td>{{post.userId}}</td>
+        <td>{{post.id}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.body}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
